@@ -649,6 +649,10 @@ span.rzm_importo:hover,.rzm_timeline-panel-ul span.importo:hover{
 /*========================================
  	====9.0 Footer Area ====  
 ========================================*/
+.rzm_footer{
+	width:100%;
+	height:auto;
+}
 
 .rzm_footer h4{
 	text-align:center;
