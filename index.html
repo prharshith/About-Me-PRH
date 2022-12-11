@@ -43,6 +43,15 @@
 <!-- Primary Page Layout
 	================================================== --> 
      <!-- Start  Mobile & Tab Header-->
+     <script>
+        $(function() {
+    $('.nav a').on('click', function(){ 
+        if($('.navbar-toggle').css('display') !='none'){
+            $(".navbar-toggle").trigger( "click" );
+        }
+    });
+});
+     </script>
     <div class="rzm_mobile_header col-sm-12 col-xs-12 hidden-lg hidden-md">
         <div class="mob_nav  navbar navbar-inverse navbar-fixed-top" id="slide-nav">
         	
@@ -753,7 +762,7 @@ darkmode.showWidget();
 
       .darkmode-toggle{
         position: fixed;
-    z-index: 999;
+       z-index: 9999;
     
       }
       

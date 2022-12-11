@@ -649,12 +649,7 @@ span.rzm_importo:hover,.rzm_timeline-panel-ul span.importo:hover{
 /*========================================
  	====9.0 Footer Area ====  
 ========================================*/
-.rzm_footer{
-	width:100%;
-	height:auto;
-	color:#404040;
-	background:#f2f2f2;
-}
+
 .rzm_footer h4{
 	text-align:center;
 	font-family: 'Lato', sans-serif;
@@ -667,7 +662,6 @@ span.rzm_importo:hover,.rzm_timeline-panel-ul span.importo:hover{
 	text-align:center;
 }
 .rez_footer_social a{
-	color:#404040;
 	padding:0 10px;
 }
 .rez_footer_social a i:hover{
