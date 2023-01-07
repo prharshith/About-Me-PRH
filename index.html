@@ -37,8 +37,19 @@
       <script src="bootstrap/js/bootstrap.min.js"></script>
       <link rel="icon" type="image/x-icon" href="img/favicon.webp">    
 
-    
-
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+      <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 700,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        </style>
         
 <!-- Primary Page Layout
 	================================================== --> 
@@ -76,7 +87,7 @@
   
     <!-- End  Mobile & Tab Header-->
    <!-- Start outside-header -->
-<div class="rzm_outside-header" id="home">
+<div class="rzm_outside-header darkmode-ignore" id="home">
  
   
 </div>
@@ -103,12 +114,12 @@
               <!--  <li><a href="#client">Clients</a></li>
                 <li><a href="#testimonial">Testimonial</a></li>-->
                 <li><a class="contact-form" href="#contact">Contact</a></li>
-                <li><a href="#home" class="go_to_top">Go To Top <i class="fa fa-arrow-up" aria-hidden="true"></i></a></li>
+                <li><a href="#home" class="go_to_top">Go To Top <img src="img/1.png" width="20" height="30"></a></li>
               </ul>
               <div class="social_nav">
-               <a href="https://instagram.com/p.r_harshith"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-               <a href="https://twitter.com/prharshith37"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
-               <a href="https://github.com/prharshith"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+               <a href="https://instagram.com/p.r_harshith"><img src="img/insta.png" width="25" height="25"></i></a>
+               <a href="https://twitter.com/prharshith37"><img src="img/twitter.png" width="25" height="25"></i></a>
+               <a href="https://github.com/prharshith"><img src="img/github.png" width="30" height="30"></i></a>
               </div>
           </div>
           <!-- End Primary navigation -->
@@ -689,14 +700,14 @@ You can find my projects on <a href="https://github.com/prharshith">Github</a>. 
 /* Track */
 ::-webkit-scrollbar-track {
   box-shadow: inset 0 0 5px rgb(255, 255, 255);
-  border-radius: 10px;
+  border-radius: 1px;
   background-color: #1a1a1a;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #00bbcc;
-  border-radius: 16px;
+  border-radius: 1px;
 }
 
 </style>
@@ -714,9 +725,9 @@ You can find my projects on <a href="https://github.com/prharshith">Github</a>. 
                 <h4>Find Me On:</h4>
                 <div class="rez_footer_social">
                 
-                       <a href="https://instagram.com/p.r_harshith"><i class="fa-brands fa-instagram" aria-hidden="true"></i></a>
-                        <a href="https://twitter.com/prharshith37"><i class="fa-brands fa-twitter" aria-hidden="true"></i></a>
-                        <a href="https://github.com/prharshith"><i class="fa-brands fa-github" aria-hidden="true"></i></a>
+                       <a href="https://instagram.com/p.r_harshith"><img src="img/instacolor.png" width="25" height="25"></i></a>
+                        <a href="https://twitter.com/prharshith37"><img src="img/twittercolor.png" width="25" height="25"></i></a>
+                        <a href="https://github.com/prharshith"><img src="img/githubcolor.png" width="30" height="30"></i></a>
                 </div>
                 <p><b>Copyright &copy; 2022 - <script>document.write(new Date().getFullYear())</script> | P R Harshith, All Rights Reserved.</b></p>
             </div>
@@ -748,8 +759,12 @@ darkmode.showWidget();
 </div>
     <style>
     .darkmode--activated p, .darkmode--activated li, .darkmode--activated span, .darkmode--activated h1,
-    .darkmode--activated h4, .darkmode--activated h3, .darkmode--activated h2 {
+    .darkmode--activated h3, .darkmode--activated h2 {
         color: rgb(255, 255, 255);
+      }
+
+      .darkmode--activated h4{
+        color: #f0f0f0;
       }
 
       .button {
@@ -760,7 +775,6 @@ darkmode.showWidget();
       .darkmode-toggle{
         position: fixed;
        z-index: 9999;
-    
       }
       
 
@@ -775,6 +789,7 @@ overflow: hidden;
     }
 </style>
 
+<style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); </style>
 
 <!--contact form script starts-->
 
@@ -784,7 +799,6 @@ overflow: hidden;
 <script src="javascripts/jquery.localscroll-min.js" ></script> 
 <script  src="javascripts/jquery.easing.1.3.js"></script> 
 <script src="javascripts/script.js"></script> 
-
 
 <script src="image_gallery/js/isotope.min.js"></script>
 <script src="image_gallery/js/jquery.fancybox.pack.js"></script>
