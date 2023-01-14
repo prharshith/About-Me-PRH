@@ -1,122 +1,838 @@
-<!doctype html>
-<title>Site Maintenance</title>
-<button class="btn" onclick="myFunction()">Toggle dark mode</button>
+<!DOCTYPE html>
+<html lang="en">
+
+
 <head>
 
-    <!-- Basic Page Needs
-      ================================================== -->
-    <meta charset="utf-8">
-    <title>WEB MAINTENANCE</title>
-    <meta property="og:image" content="https://img.freepik.com/free-vector/oops-404-error-with-broken-robot-concept-illustration_114360-5529.jpg?w=740&t=st=1673632155~exp=1673632755~hmac=b07a6b750caf57722b1e1df11672c64d502952918e604246a1cc1458263d8b48" />
-    <meta name="description" content="A website where you can find all the necessary details about me and my career if you are interested in hiring me." />
-    <meta name="keywords" content="IT, Cybersecurity, Career, Hiring, P R HARSHITH, Jobs" />
-    <meta name="author" content="P R HARSHITH" />
-    <meta name="viewport" content="width=device-width, initial-scale=1"> </head>
-<style>
-  h1 { font-size: 60px; }
-  body { font: 20px Helvetica, sans-serif; color: #333; }
-  a { color: #dc8100; text-decoration: none; }
-  a:hover { color: #333; text-decoration: none; }
-</style>
-<center>
-<article>
-    <h1>We&rsquo;ll be back soon!</h1>
-    <div>
-        <p>Sorry for the inconvenience but we&rsquo;re performing some maintenance at the moment.<br> If you need to you can always <a href="mailto:support@prharshith.tk">contact us</a>, otherwise we&rsquo;ll be back online shortly!</p>
-        <p>&mdash; P R HARSHITH</p>
+<!-- Basic Page Needs
+  ================================================== -->
+<meta charset="utf-8">
+<title>P R HARSHITH</title>
+<link rel="icon" type="image/x-icon" href="img/favicon.jpg">
+<meta property="og:image" content="https://prharshith.pages.dev/img/prhwebsite.png" />
+<meta name="description" content="A website where you can find all the necessary details about me and my career if you are interested in hiring me." />
+<meta name="keywords" content="IT, Cybersecurity, Career, Hiring, P R HARSHITH, Jobs" />
+<meta name="author" content="P R HARSHITH" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+</head>
+<body>
+   
+<!-- CSS
+  ================================================== -->
+
+  <link rel="stylesheet" href="stylesheets/animate.css">
+  <link rel="stylesheet" href="stylesheets/layout.css">
+  <link rel="stylesheet" href="stylesheets/responsive.css">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+  
+  <link rel="stylesheet" type="text/css" href="image_gallery/css/jquery.fancybox.css">
+  <link rel="stylesheet" href="image_gallery/css/styles.css">
+      
+<!--    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" rel="preload" as="style" onload="this.onload=null;this.rel='stylesheet'">
+ -->  
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins)
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+   <script src="javascripts/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="bootstrap/js/bootstrap.min.js"></script>
+
+
+<!--       <link rel="stylesheet" href="stylesheets/googlefont.css">
+      <link rel="stylesheet" href="stylesheets/googlefont2.css"> -->
+
+     
+      <style>
+        .material-symbols-outlined {
+          font-variation-settings:
+          'FILL' 1,
+          'wght' 700,
+          'GRAD' 0,
+          'opsz' 48
+        }
+        </style>
+        
+<!-- Primary Page Layout
+	================================================== --> 
+     <!-- Start  Mobile & Tab Header-->
+     <script>
+        $(function() {
+    $('.nav a').on('click', function(){ 
+        if($('.navbar-toggle').css('display') !='none'){
+            $(".navbar-toggle").trigger( "click" );
+        }
+    });
+});
+     </script>
+    <div class="rzm_mobile_header col-sm-12 col-xs-12 hidden-lg hidden-md">
+        <div class="mob_nav  navbar navbar-inverse navbar-fixed-top" id="slide-nav">
+        	
+        	<div class="navbar-header">
+                <img src="img/svgmenu.svg" class="navbar-toggle">
+             </div>
+
+             <div id="slidemenu" class="navbar-default navbar-inverse">
+                    <ul class="nav navbar-nav primary">
+               
+                    <li><a href="#home">About </a></li>
+                    <li><a href="#portfolio">My Certificates</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                   <!-- <li><a href="#client">Clients</a></li>
+                    <li><a href="#testimonial">Testimonial</a></li>-->
+                    <li><a href="#contact">Contact</a></li>
+                    
+                    
+                  </ul>
+             </div>
+        </div>
     </div>
-</article></center>
+  
+    <!-- End  Mobile & Tab Header-->
+   <!-- Start outside-header -->
+
+   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+<div class="rzm_outside-header darkmode-ignore" id="home">
+ 
+  
+</div>
+<!-- End outside-header -->
+<!-- Start Outside Main -->
+
+<div class="outside-main" id="page-content">
+  
+  <!-- Start Main Container -->
+  <div class="container">
+    <div class="row">
+        <div class="col-md-3 col-sm-12 rzm_profile_nav">
+            <div class="sticky">
+           <div class="logo">
+            <img src="img/profle_photo.webp" alt="profile_photo" class="img-responsive img-circle">
+           </div>
+             <!-- Start primary navigation -->
+          <div class="rzm_main_menu hidden-sm hidden-xs">
+              <ul class="primary">
+           
+                <li class="first"><a href="#home">About Me</a></li>
+                <li><a href="#portfolio">My Certificates</a></li>
+                <li><a href="#experience">Experience</a></li>
+              <!--  <li><a href="#client">Clients</a></li>
+                <li><a href="#testimonial">Testimonial</a></li>-->
+                <li><a class="contact-form" href="#contact">Contact</a></li>
+                <li><a href="#home" class="go_to_top">Go To Top <img src="img/1.png" width="20" height="30"></a></li>
+              </ul>
+              <div class="social_nav">
+               <a href="https://instagram.com/p.r_harshith"><img src="img/insta.png" width="25" height="25"></i></a>
+               <a href="https://twitter.com/prharshith37"><img src="img/twitter.png" width="25" height="25"></i></a>
+               <a href="https://github.com/prharshith"><img src="img/github.png" width="30" height="30"></i></a>
+              </div>
+          </div>
+          <!-- End Primary navigation -->
+        </div>
+    
+        </div>
+    
+    <div class="clearfix"></div>
+    <!-- Start Profile Section -->
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 first profile rez_about">
+      <div class="rez_top_title">
+      		<h1>Hi, My Name is P R HARSHITH</h1>
+            <p>Founder of <u><a href="https://studentnotesportal.pages.dev">Student Notes Website</a></u> | Student at Vardhaman College of Engineering | Cybersecurity | Ethical Hacking | Network Security | Blockchain Technology. </p>
+      </div>
+      
+      <h1 class="title">About Me</h1>
+     
+      <!-- Start About section -->
+      <div class="col-md-12 col-sm-12 col-xs-12  omega  about">
+        <p class="about_info">Born & raised in Hyderabad, India. I'm genuinely inspired by modern technology in our society and I've worked on a variety of projects with both individuals and internship companies. I have experience in web design, UI design, DBMS, C, Python & Graphic Design.<br><br>
+You can find my projects on <a href="https://github.com/prharshith">Github</a>. Random thoughts on <a href="https://twitter.com/prharshith37">Twitter</a> and cool pictures on <a href="https://instagram.com/p.r_harshith">Instagram.</a> If you want to hire me please send me an <a href="mailto:hireme@prharshith.tk">Email</a> or <a href="tel:+919441209768">Contact Via Phone Call(India).</a> </p>
+
+        <div class="rzm_progress_bar">
+            <h4>Adobe Photoshop</h4>
+            <small class="pull-right rzm_perchantage">60%</small>
+            <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="60" style="width: 10%;">
+                    <span class="sr-only">60% Complete</span>
+                  </div>
+            </div>
+        </div><!--Progress Item One-->
+    
+        <div class="rzm_progress_bar">
+            <h4>Adobe Premiere Pro</h4>
+            <small class="pull-right rzm_perchantage">90%</small>
+            <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="90" aria-valuemin="0" aria-valuemax="90" style="width:10%;">
+                    <span class="sr-only">90% Complete</span>
+                  </div>
+            </div>
+        </div><!--Progress Item Two-->
+    
+        <div class="rzm_progress_bar">
+            <h4>Python</h4>
+            <small class="pull-right rzm_perchantage">95%</small>
+            <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="95" aria-valuemin="0" aria-valuemax="95" style="width:10%;">
+                    <span class="sr-only">95% Complete</span>
+                  </div>
+            </div>
+        </div><!--Progress Item three-->
+    
+        <div class="rzm_progress_bar">
+            <h4>HTML/CSS</h4>
+            <small class="pull-right rzm_perchantage">100%</small>
+            <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 5%;">
+                    <span class="sr-only">100% Complete</span>
+                  </div>
+            </div>
+        </div><!--Progress Item three-->
+    
+        <div class="rzm_progress_bar">
+            <h4>Graphic Design</h4>
+            <small class="pull-right rzm_perchantage">100%</small>
+            <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100" style="width: 10%;">
+                    <span class="sr-only">100% Complete</span>
+                  </div>
+            </div>
+            
+       </div><!--Progress Item four-->
+      </div>
+      
+      <!-- End About -->
+      
+      <div class="clear">
+      </div>
+      
+    </section>
+    <!-- End About section -->
+   
+    
+    <!-- Start Portfolio section -->
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 rzm_portfolio" id="portfolio">
+      <h1 class="title">My Certificates</h1>
+      <section class="filter-section">
+                <div class="row">
+                    <div class="col-sm-12 col-xs-12">
+                   
+                        <div class="filter-container isotopeFilters3">
+                            <ul class="list-inline filter">
+                                <li class="active"><a href="#" data-filter="*">All </a></li>
+                                <li><a href="#" data-filter=".coursera">Coursera</a></li>
+                                <li><a href="#" data-filter=".cisco">Cisco Professional</a></li>
+                                <li><a href="#" data-filter=".college">College Specific</a></li>
+                            </ul>
+                        </div>
+                        
+                    </div>
+                </div>
+            
+        </section>
+        <section class="portfolio-section port-col">
+                <div class="row">
+                    <div class="isotopeContainer3">
+                    
+                    <div class="col-sm-6 isotopeSelector coursera">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/22.webp" alt="Coursera - How to write a resume Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/Coursera 5Z7M5Y4B6QR6.pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            
+                        </article>
+                    </div>
+                    
+                    <div class="col-sm-6 isotopeSelector coursera">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/23.webp" alt="Coursera - Introduction to HTML Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/Coursera DHK6LA2DDCVQ.pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                           
+                        </article>
+                    </div>
+                    
+                    <div class="col-sm-6 isotopeSelector coursera">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/24.webp" alt="Coursera - Introduction to personal branding Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/Coursera NEX6BCJ48RQ9.pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            
+                        </article>
+                    </div>
+                    
+                    <div class="col-sm-6 isotopeSelector cisco">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/25.webp" alt="Cisco - Introduction to Cybersecurity Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/P RHARSHITH-Introduction to Cybersecurity Cisco Signature.pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                            
+                        </article>
+                    </div>
+                    
+                    <div class="col-sm-6 isotopeSelector cisco">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/26.webp" alt="Cisco - Introduction to IoT Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/P RHARSHITH-Introduction to IoT Cisco Signature.pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                           
+                        </article>
+                    </div>
+                    
+                    <div class="col-sm-6 isotopeSelector college">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/27.webp" alt="VCE - E Quiz Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/Certificate for P R HARSHITH for _National level e-Quiz on Th..._.pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+
+
+
+                    <div class="col-sm-6 isotopeSelector college">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/28.webp" alt="VCE - E Quiz-2 Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/Certificate for Mr. P R HARSHITH for _National level e-Quiz on Ro..._ (1).pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+                    
+                    
+                    <div class="col-sm-6 isotopeSelector college">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/29.webp" alt="GMRIT - Launching a Nanosatellite 2 Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/Certificate for P R HARSHITH for __.pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+
+
+                    <div class="col-sm-6 isotopeSelector college">
+                        <article class="">
+                            <figure>
+                                <img src="image_gallery/images/30.webp" alt="MGIT - E Quiz GS Certificate" width="500" height="600">
+                                <div class="overlay-background">
+                                    <div class="inner"></div>
+                                </div>
+                                <div class="overlay">
+                                    <div class="inner-overlay">
+                                        <div class="inner-overlay-content with-icons">
+                                            <a href="image_gallery/images/Certificate for P R HARSHITH for _e-Quiz_ General Science_ (1).pdf"><img src="img/add.png" width="30" height="30"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </figure>
+                        </article>
+                    </div>
+                    </div>
+                </div>
+        </section>
+        <!--<div class="rzm_button">
+             <a href="" class="btn btn-sm btn-default">Show More</a>
+        </div>-->
+	</section>
+ <!-- End Profile Section--> 
+   <!-- Start Experience section -->
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 rzm_experience" id="experience">
+      <h1 class="title">My Experience</h1>
+      <div id="rzm_timeline">
+            
+        <div class="row rzm_timeline-movement">
+        
+            <div class="rzm_timeline-badge active_box">    
+            </div>
+        
+        
+            <div class="col-sm-6 col-xs-12 rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel credits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li>Apr 2021 - Present </li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-6 col-xs-12  rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel debits">
+                            <ul class="rzm_timeline-panel-ul active">
+                                <li><span class="rzm_importo">Students Notes Website</span></li>
+                                <li><span class="rzm_causale">CEO, Head Developer </span> </li>
+                                
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--expereince Item three-->
+<div class="row rzm_timeline-movement">
+        
+            <div class="rzm_timeline-badge">    
+            </div>
+        
+        
+            <div class="col-sm-6  rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel credits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li>Jul 2021</li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-6  rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel debits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li><span class="importo">Brainovision Solutions (India) Pvt. Ltd</span></li>
+                                <li><span class="rzm_causale">Data Science, Intern </span> </li>
+                               
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+<!--expereince Item four-->
+<div class="row rzm_timeline-movement">
+        
+            <div class="rzm_timeline-badge">    
+            </div>
+        
+        
+            <div class="col-sm-6  rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel credits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li>Aug 2020</li>
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+        
+            <div class="col-sm-6  rzm_timeline-item">
+                <div class="row">
+                    <div class="col-sm-offset-1 col-sm-11 col-xs-12">
+                        <div class="rzm_timeline-panel debits">
+                            <ul class="rzm_timeline-panel-ul">
+                                <li><span class="importo">Verzeo Edutech Pvt. Ltd.</span></li>
+                                <li><span class="rzm_causale">Android App Development, Intern </span> </li>
+                               
+                            </ul>
+                        </div>
+        
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+<!--expereince Item Five-->
+    
+        </div>
+		<div class="rzm_button">
+        	<a href="P R Harshith Resume.pdf" class="btn btn-sm btn-default"><img src="img/download.png" width="30" height="30"></i>&nbsp;&nbsp;Resume</a>
+        </div>
+    </section>
+   <!-- End Experience section
+   
+   <!-- Start Client section 
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 rzm_client" id="client">
+    	<h1 class="title">Clients</h1>
+        <p>Had the privilege to work with companies such as Adobe, Udemy, Puma, Google, GravityPayments & more.</p>
+        <small>Also featured in Behance, SitePoint, Envato, DesignMag, Dribbble etc.</small>
+        <div class="rzm_client_img">
+        	<img src="img/reebook.png" alt="" class="no_padding_left">
+            <img src="img/Cocacola.png" alt="">
+            <img src="img/adidas.png" alt="">
+            <img src="img/sony.png" alt="" class="no_padding_right">           
+        </div>
+    </section>
+   <!-- End Client section 
+   <!-- Start Testimonial section 
+    <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 rzm_Testimonial" id="testimonial">
+    	<h1 class="title">Testimonial</h1>
+        <div class="rzm_testimonial_content">
+              <div id="carousel" class="carousel slide" data-ride="carousel"> <!-- Indicators 
+                <ol class="carousel-indicators">
+                  <li data-target="#carousel" data-slide-to="0" class="active"></li>
+                  <li data-target="#carousel" data-slide-to="1"></li>
+                  <li data-target="#carousel" data-slide-to="2"></li>
+                </ol>
+                <!-- Wrapper for slides 
+                <div class="carousel-inner">
+                  <div class="item active">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="thumbnail adjust1">
+                          <div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive img-circle" src="img/testimonial_1.jpg" alt=""> </div>
+                          <div class="col-md-10 col-sm-10 col-xs-12">
+                            <div class="caption">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                              <blockquote class="adjust2">
+                                <p>Daniel Ray</p>
+                                <small>CEO, GravityPayments</small> </blockquote>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="thumbnail adjust1">
+                          <div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive img-circle" src="img/testimonial_2.jpg" alt=""> </div>
+                          <div class="col-md-10 col-sm-10 col-xs-12">
+                            <div class="caption">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                              <blockquote class="adjust2">
+                                <p>Steven M.</p>
+                                <small>Marketing Administrator, Hoslk llc</small> 
+                              </blockquote>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="item">
+                    <div class="row">
+                      <div class="col-xs-12">
+                        <div class="thumbnail adjust1">
+                          <div class="col-md-2 col-sm-2 col-xs-12"> <img class="media-object img-rounded img-responsive img-circle" src="img/testimonial_3.jpg" alt=""> </div>
+                          <div class="col-md-10 col-sm-10 col-xs-12">
+                            <div class="caption">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat..</p>
+                              <blockquote class="adjust2">
+                                <p>D. Riccardi</p>
+                                <small>HR Administrator, Tubliv llc</small> 
+						    </blockquote>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                
+                
+                
+                
+                 </div>
+            </div>
+    </section>
+   < End Testimonial section -->
+   
+   <!-- Start Contact section -->
+   <section class="col-md-9 col-sm-12 col-xs-12 col-md-offset-3 rzm_contact" id="contact">
+   		<h1 class="title">Contact</h1>
+      <!-- Start Contact Form -->
+      <br><br><br><br><br>
+    <center> <a href="mailto:hireme@prharshith.tk"
+        <button class="button-86" role="button">Contact Me</button></a></center>
+        <style>
+        .button-86 {
+          all: unset;
+          width: 130px;
+          height: 30px;
+          font-size: 16px;
+          background: transparent;
+          border: none;
+          position: relative;
+          color: #f0f0f0;
+          cursor: pointer;
+          z-index: 1;
+          padding: 10px 20px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          white-space: nowrap;
+          user-select: none;
+          -webkit-user-select: none;
+          touch-action: manipulation;
+        }
+        
+        .button-86::after,
+        .button-86::before {
+          content: '';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          z-index: -99999;
+          transition: all .4s;
+        }
+        
+        .button-86::before {
+          transform: translate(0%, 0%);
+          width: 100%;
+          height: 100%;
+          background: #28282d;
+          border-radius: 10px;
+        }
+        
+        .button-86::after {
+          transform: translate(10px, 10px);
+          width: 40px;
+          height: 40px;
+          background: #ffffff15;
+          backdrop-filter: blur(5px);
+          -webkit-backdrop-filter: blur(5px);
+          border-radius: 50px;
+        }
+        
+        .button-86:hover::before {
+          transform: translate(5%, 20%);
+          width: 110%;
+          height: 110%;
+        }
+        
+        .button-86:hover::after {
+          border-radius: 10px;
+          transform: translate(0, 0);
+          width: 100%;
+          height: 100%;
+        }
+        
+        .button-86:active::after {
+          transition: 0s;
+          transform: translate(0, 5%);
+        }
+        
+        </style>
+       
+
+<style>
+  /* width */
+::-webkit-scrollbar {
+  width: 19px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px rgb(255, 255, 255);
+  border-radius: 1px;
+  background-color: #1a1a1a;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #00bbcc;
+  border-radius: 1px;
+}
+
+</style>
+<!-- End Contact Form -->
+   </section>
+   <!-- End Contact section -->
+  
+ </div>
+ </div><!-- End Main Container-->
+ </div> <!-- End Outside Main-->
+ 
+  <!-- Start footer section -->
+   		<section class="col-md-12 col-sm-12 col-xs-12 rzm_footer container-fluid">
+        	<div class="container">
+                <h4>Find Me On:</h4>
+                <div class="rez_footer_social">
+                
+                       <a href="https://instagram.com/p.r_harshith"><img src="img/instacolor.png" width="25" height="25"></i></a>
+                        <a href="https://twitter.com/prharshith37"><img src="img/twittercolor.png" width="25" height="25"></i></a>
+                        <a href="https://github.com/prharshith"><img src="img/githubcolor.png" width="30" height="30"></i></a>
+                </div>
+                <p><b>Copyright &copy; 2022 - <script>document.write(new Date().getFullYear())</script> | P R Harshith, All Rights Reserved.</b></p>
+            </div>
+        </section>
+   <!-- End footer section -->
+<!-- JS
+	==================================================  -->
+    <div class="sizinc">
+    <script src="javascripts/darkmodejs.js"></script>
+    <script>
+const options = {
+  bottom: '64px', // default: '32px'
+  right: 'unset', // default: '32px'
+  left: '32px', // default: 'unset'
+  time: '0.3s', // default: '0.3s'
+  mixColor: '#fff', // default: '#fff'
+  backgroundColor: '#fff',  // default: '#fff'
+  buttonColorDark: '#100f2c',  // default: '#100f2c'
+  buttonColorLight: '#fff', // default: '#fff'
+  saveInCookies: true, // default: true,
+  label: '🌓', // default: ''
+  autoMatchOsTheme: true // default: true
+  
+}
+
+const darkmode = new Darkmode(options);
+darkmode.showWidget();
+    </script>
+</div>
+    <style>
+    .darkmode--activated p, .darkmode--activated li, .darkmode--activated span, .darkmode--activated h1,
+    .darkmode--activated h3, .darkmode--activated h2 {
+        color: rgb(255, 255, 255);
+      }
+
+      .darkmode--activated h4{
+        color: #f0f0f0;
+      }
+
+      .button {
+        isolation: isolate;
+        
+      }
+
+      .darkmode-toggle{
+        position: fixed;
+       z-index: 9999;
+      }
+      
+
+      
+      </style>
+
+
+<style>
+    .sizinc{
+height: 215px;
+overflow: hidden;
+    }
+</style>
+
+<!--  <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); </style>  -->
+
+<style> 
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(stylesheets/fontwoff.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+</style>
+
+<!--<center><strong>Website Feedback or Report Bugs -> <a href="mailto:support@prharshith.tk">Report a Problem</a></strong></center><br><br>-->
 
 <center><strong>Read Our Privacy Policy Here -> <u><a href="privacypolicy.html"> Privacy Policy </a></u></strong></center>
 
-<br><br><br>
-
- <CENTER><p>Copyright &copy; 2022 - <script>document.write(new Date().getFullYear())</script> | P R Harshith, All Rights Reserved.</p></CENTER>
-
- <style>
-    body{
-        font-display: swap;
-        font-family: 'Montserrat', sans-serif !important;
-        }
-    .dark-mode {
-      background-color: black;
-      color: white;
+<style>
+    strong{
+        font-size: 15px;
+        font-weight:bolder
     }
-    
-    .btn {
-      background: #009e84;
-      background-image: -webkit-linear-gradient(top, #009e84, #679137);
-      background-image: -moz-linear-gradient(top, #009e84, #679137);
-      background-image: -ms-linear-gradient(top, #009e84, #679137);
-      background-image: -o-linear-gradient(top, #009e84, #679137);
-      background-image: linear-gradient(to bottom, #009e84, #679137);
-      -webkit-border-radius: 9;
-      -moz-border-radius: 9;
-      border-radius: 9px;
-      -webkit-box-shadow: 0px 1px 3px #666666;
-      -moz-box-shadow: 0px 1px 3px #666666;
-      box-shadow: 0px 1px 3px #666666;
-      font-family: Montserrat;
-      color: #ffffff;
-      font-size: 20px;
-      padding: 10px 20px 10px 20px;
-      text-decoration: none;
-    }
-    
-    .btn:hover {
-      background: #001624;
-      background-image: -webkit-linear-gradient(top, #001624, #54626b);
-      background-image: -moz-linear-gradient(top, #001624, #54626b);
-      background-image: -ms-linear-gradient(top, #001624, #54626b);
-      background-image: -o-linear-gradient(top, #001624, #54626b);
-      background-image: linear-gradient(to bottom, #001624, #54626b);
-      text-decoration: none;
-    }
-    </style>
-    
-    
-    <style> @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap'); </style>
-    
-    
-    <script>
-    function myFunction() {
-       var element = document.body;
-       element.classList.toggle("dark-mode");
-    }
-    </script>
-    <style>
-        div.ovflw {
-      overflow: clip;
-    }
-    </style>
+</style>
 
-<center><b>Time [IST]:<div id = "clock" onload="currentTime()"></div><b></center>
-<script>
-function currentTime() {
-  let date = new Date(); 
-  let hh = date.getHours();
-  let mm = date.getMinutes();
-  let ss = date.getSeconds();
-  let session = "AM";
+<!--contact form script starts-->
 
-  if(hh == 0){
-      hh = 12;
-  }
-  if(hh > 12){
-      hh = hh - 12;
-      session = "PM";
-   }
+<script src="javascripts/jquery.tipsy.js"></script> 
 
-   hh = (hh < 10) ? "0" + hh : hh;
-   mm = (mm < 10) ? "0" + mm : mm;
-   ss = (ss < 10) ? "0" + ss : ss;
-    
-   let time = hh + ":" + mm + ":" + ss + " " + session;
+<script src="javascripts/jquery.scrollTo-min.js" ></script> 
+<script src="javascripts/jquery.localscroll-min.js" ></script> 
+<script  src="javascripts/jquery.easing.1.3.js"></script> 
+<script src="javascripts/script.js"></script> 
 
-  document.getElementById("clock").innerText = time; 
-  let t = setTimeout(function(){ currentTime() }, 1000);
-}
-currentTime();
-</script>
+<script src="image_gallery/js/isotope.min.js"></script>
+<script src="image_gallery/js/jquery.fancybox.pack.js"></script>
+<script src="image_gallery/js/main.js"></script>
 
+<!-- End Document
+================================================== -->
+</body>
 </html>
