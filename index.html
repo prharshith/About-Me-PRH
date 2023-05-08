@@ -107,7 +107,7 @@
 	<!-- site footer -->
 	<div class="footer">
 		<!-- copyright text -->
-		<span class="copyright"><a href="index.html">© 2023 P R HARSHITH</a></span>
+		<span class="copyright"><a href="index.html">© <script>document.write(new Date().getFullYear())</script> P R HARSHITH</a></span>
 	</div>
 
 </header>
@@ -126,7 +126,7 @@
 
 				<!-- info -->
 				<h1 class="mb-2 mt-0">P R HARSHITH</h1>
-				<span>I'm a <span class="text-rotating">Cybersecurity Expert., Front-End Developer., Network Security Expert., Information Security Expert., Linux Administrator., Ethical Hacker., Red Teaming Learner., Offensive Security Learner., Defensive Security Learner.</span></span>
+				<span>I'm a <span class="text-rotating">Cybersecurity Expert., Front-End Developer., Network Security Expert., Information Security Expert., Linux Administrator., Ethical Hacker., Offensive Security Learner., Defensive Security Learner.</span></span>
 
 				<!-- social icons -->
 				<ul class="social-icons light list-inline mb-0 mt-4">
@@ -1167,8 +1167,9 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 					<!-- contact info -->
 					<div class="contact-info">
 						<h3 class="wow fadeInUp">Let's talk about everything!</h3>
-						<p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:hireme@prharshith.tk">email</a>. 👋</p>
-						<p class="wow fadeInUp">Don't like email either? Call Me By <a href="tel:+919441209768">Clicking Here</a>. 👋</p>
+						<br>
+						<p class="wow fadeInUp">Don't like forms? Send me an <a href="mailto:hireme@prharshith.tk">email</a>. 📧</p>
+						<p class="wow fadeInUp">Don't like email either? <a href="tel:+919441209768">Call Me (+91 India)</a>. 📞</p>
 					</div>
 				</div>
 
@@ -1183,7 +1184,7 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 							<div class="column col-md-6">
 								<!-- Name input -->
 								<div class="form-group">
-									<input type="text" class="form-control" name="name" id="InputName" placeholder="Your Full Name" required="required" data-error="Name is required.">
+									<input type="text" class="form-control" name="name" id="InputName" placeholder="Your Full Name" required="required" data-error="Full Name is required.">
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
@@ -1191,7 +1192,7 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 							<div class="column col-md-6">
 								<!-- Email input -->
 								<div class="form-group">
-									<input type="email" class="form-control" id="InputEmail" name="email" placeholder="Your Email Address" required="required" data-error="Email is required.">
+									<input type="email" class="form-control" id="InputEmail" name="email" placeholder="Your Email Address" required="required" data-error="Email Address is required.">
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
@@ -1208,7 +1209,7 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 								<!-- Message textarea -->
 								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 								<div class="form-group">
-								<textarea name="Message" id="message" class="form-control" rows="9" placeholder="Type Your Message (Please include subject of your message if any)" required="required" data-error="Message is required." rows="5" cols="60"></textarea>
+								<textarea name="Message" id="message" class="form-control" rows="9" placeholder="Type Your Message (Please include subject of your message if any)" required="required" data-error="Message Content is required." rows="5" cols="60"></textarea>
 									<div class="help-block with-errors"></div>
 								</div>
 							</div>
@@ -1263,5 +1264,81 @@ I'm a Hyderabad-based technophile passionate about the societal impact of modern
 
 
 <center><p><b> Read My Privacy Policy Here:<br> <a href="privacypolicy.html"><u>Privacy Policy</u></a><b></p></center>
+
+
+<br>
+
+<!--
+<center><h6>The Time Now in India is:   <span id="indiatime"></span></center>
+<script type="text/javascript">
+function GetClock(){
+var d=new Date();
+var dx=d.toGMTString();
+dx=dx.substr(0,dx.length -3);
+d.setTime(Date.parse(dx))
+d.setSeconds(d.getSeconds() + 19800);
+
+
+var nhour=d.getHours(),nmin=d.getMinutes(),nsec=d.getSeconds(),ap;
+
+if(nhour==0){ap=" am";nhour=12;}
+else if(nhour<12){ap=" am";}
+else if(nhour==12){ap=" pm";}
+else if(nhour>12){ap=" pm";nhour-=12;}
+
+if(nmin<=9) nmin="0"+nmin;
+if(nsec<=9) nsec="0"+nsec;
+
+var clocktext=""+nhour+":"+nmin+":"+nsec+ap+"";
+document.getElementById('indiatime').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+
+
+<center><h6>The Date in India is:   <span id="indiadate"></span></center>
+<script type="text/javascript">
+var tmonth=["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+function GetClock(){
+var d=new Date();
+var dx=d.toGMTString();
+dx=dx.substr(0,dx.length -3);
+d.setTime(Date.parse(dx))
+d.setSeconds(d.getSeconds() + 19800);
+var nmonth=d.getMonth(),ndate=d.getDate(),nyear=d.getFullYear();
+
+
+var clocktext=""+tmonth[nmonth]+" "+ndate+", "+nyear+"";
+document.getElementById('indiadate').innerHTML=clocktext;
+}
+
+GetClock();
+setInterval(GetClock,1000);
+</script>
+</h6>
+
+
+<style>
+#indiadate{
+
+font-size: 20px;
+color: #03C988;
+}
+
+#indiatime{
+
+font-size: 20px;
+color: #03C988;
+}
+
+</style>-->
+
+
+<!--
+<center><h6> Don't Like This New Design?<br> <a href=""><u>Switch back to the Old Design</u></a></h6></center>
+-->
 </body>
 </html>
