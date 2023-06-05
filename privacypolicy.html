@@ -9,13 +9,13 @@
 </head>
 <body>
     <div class="ovflw">
-<button class="button-88" onclick="myFunction()">Dark/Light Mode Switch</button>
+<!--<button class="button-88" onclick="myFunction()">Dark/Light Mode Switch</button> AUTOMATIC DARKMODE ADDED SO NO NEED OF TOGGLE BUTTON!!-->
 <!--<a href="https://prharshith.tk"></a>-->
 <!--form action="https://prharshith.tk"> </form>--><br><button class="button-87" role="button" onclick="window.location.href='index.html';">Return To Homepage</button>
 
 
 <h1>Privacy Policy</h1>
-<p>Last updated: 10<sup>th</sup> May 2023 at 4:24 PM [GMT +5:30]</p>
+<p>Last updated: 5<sup>th</sup> June 2023 at 7:11 PM [GMT +5:30]</p>
 <p>This Privacy Policy describes Our policies and procedures on the collection, use and disclosure of Your information when You use the Service and tells You about Your privacy rights and how the law protects You.</p>
 <p>We use Your Personal data to provide and improve the Service. By using the Service, You agree to the collection and use of information in accordance with this Privacy Policy. This Privacy Policy has been created with the help of the <a href="https://www.freeprivacypolicy.com/free-privacy-policy-generator/" target="_blank">Free Privacy Policy Generator</a>.</p>
 <h1>Interpretation and Definitions</h1>
@@ -284,24 +284,20 @@ body{
 a{
 color: #12b473;
 }
-    
-.dark-mode {
-  background-color: black;
-  color: white;
-}
 
 </style>
 
+<style>
+@media (prefers-color-scheme: dark) {
+ *{ 
+ background-color: black;
+  color: white;
+}
 
+}
+</style>
 <style>@import url("https://fonts.googleapis.com/css?family=Rubik:300,300i,400,400i,500,500i,700,700i,900,900i&amp;display=swap&amp;subset=cyrillic");</style>
 
-
-<script>
-function myFunction() {
-   var element = document.body;
-   element.classList.toggle("dark-mode");
-}
-</script>
 <style>
     div.ovflw {
   overflow: clip;
